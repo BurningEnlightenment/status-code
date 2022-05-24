@@ -108,7 +108,6 @@ foreach(source
   )
   target_sources(status-code INTERFACE
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/${source}>"
-    "$<INSTALL_INTERFACE:${source}>"
   )
   get_filename_component(dir ${source} DIRECTORY)
   install(FILES "${source}"
